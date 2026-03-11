@@ -1,60 +1,60 @@
-/* sets the margin of all the element to 10px on all sides and the background-color to black */
+/* sets the margin of all the element to 10px on all sides and the background-color to light neutral */
 body{
     margin: 10px;
-	background-color: rgb(33, 112, 221);
+	background-color: #f8fafc;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Home section  which has the app name and nav bar. The styling is applied by id */
-
+/* Home section which has the app name and nav bar */
 #home {
-    background-color:  #483355;
+    background-color: #0f172a;
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
     margin-top:-1cm;
     padding-top: 2cm;
     padding-bottom: 2cm;
-   }
+}
 
-/* Application name inside the home section. The styling is applied by tag name */
-
-  header {
+/* Application name */
+header {
     font-size: 30px;
-    color: rgb(240, 234, 245);
+    color: #ffffff;
     float: left;
     padding-left: 2cm;
-  }
+}
 
-/* Navigation Bar Container*/
-
-  .topdiv {
+/* Navigation Bar Container */
+.topdiv {
     float: right;
     padding-right: 1cm;
-  }
+}
   
 /* Navigation Bar Buttons */
-  .topmenu {
-    color: lightgray;
-    background-color:   #483355;
+.topmenu {
+    color: #e2e8f0;
+    background-color: #0f172a;
     margin: 10px;
     padding: 10px;
     font-size: 20px;
     text-decoration:none;
-    border-radius: 1mm;
-  }
+    border-radius: 6px;
+}
   
-  .topmenu:hover {
+.topmenu:hover {
     color: white;
-    font-weight: bolder;
-    background-color: #382742;
-    text-decoration: underline;
-  }
-/* Container for all the three conversion calculator sections   */
+    font-weight: bold;
+    background-color: #1e293b;
+    text-decoration: none;
+}
+  
+/* Container for all the three conversion calculator sections */
 #all-conversion-sections{
     display: grid;
     justify-content: center;
 }
 
+/* Image container */
 figure {
     float:left; 
     justify-self: auto; 
@@ -66,193 +66,83 @@ img {
 }
 
 figcaption {
-    color:black;
+    color:#475569;
     font-size: 17px;
     text-align: center;
 }
 
+/* Buttons */
 button{
-    font-size: 20px;
-    border: transparent;
+    font-size: 18px;
+    border: none;
     width: fit-content;
-    background-color: rgb(173, 218, 173);
-    border-radius: 40px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-button:hover {
-    cursor: pointer;
-}
-/* The calculator panel */
-.b{
-    border-top-style: solid;
-    background-color: white;
-    border-top-width: 20px;
-    width: 600px;
-    height: 400px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    display: flex;
-}
-
-.temperature{
-    border-top-color: green;
-}
-
-.weight{
-    border-top-color: coral;
-}
-
-.distance{
-    border-top-color: cyan;
-
-}
-
-legend {
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-/* sets the margin of all the element to 10px on all sides and the background-color to black */
-body{
-    margin: 10px;
-	background-color: rgb(164, 136, 240);
-}
-
-/* Home section  which has the app name and nav bar. The styling is applied by id */
-
-#home {
-    background-color:  #483355;
-    padding-bottom: 1cm;
-    margin-left:-1cm;
-    margin-right:-1cm;
-    margin-top:-1cm;
-    padding-top: 2cm;
-    padding-bottom: 2cm;
-   }
-
-/* Application name inside the home section. The styling is applied by tag name */
-
-  header {
-    font-size: 30px;
-    color: rgb(240, 234, 245);
-    float: left;
-    padding-left: 2cm;
-  }
-
-/* Navigation Bar Container*/
-
-  .topdiv {
-    float: right;
-    padding-right: 1cm;
-  }
-  
-/* Navigation Bar Buttons */
-  .topmenu {
-    color: lightgray;
-    background-color:   #483355;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    text-decoration:none;
-    border-radius: 1mm;
-  }
-  
-  .topmenu:hover {
+    background-color: #16a34a;
     color: white;
-    font-weight: bolder;
-    background-color: #382742;
-    text-decoration: underline;
-  }
-  
-/* Container for all the three conversion calculator sections   */
-#all-conversion-sections{
-    display: grid;
-    justify-content: center;
-}
-
-figure {
-    float:left; 
-    justify-self: auto; 
-    width:200px
-}
-
-img {
-    width: 200px;
-}
-
-figcaption {
-    color:black;
-    font-size: 17px;
-    text-align: center;
-}
-
-button{
-    font-size: 20px;
-    border: transparent;
-    width: fit-content;
-    background-color: rgb(173, 218, 173);
-    border-radius: 40px;
-    padding-right: 15px;
-    padding-left: 15px;
+    border-radius: 6px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 button:hover {
     cursor: pointer;
+    background-color: #15803d;
 }
 
 /* The calculator panel */
 .b{
     border-top-style: solid;
     background-color: white;
-    border-top-width: 20px;
+    border-top-width: 4px;
     width: 600px;
     height: 400px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    border-radius: 16px;
+    margin-bottom: 35px;
+    margin-top: 35px;
     display: flex;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+/* Card accent colors */
 .temperature{
-    border-top-color: green;
+    border-top-color: #2563eb;
 }
 
 .weight{
-    border-top-color: coral;
+    border-top-color: #16a34a;
 }
 
 .distance{
-    border-top-color: cyan;
-
+    border-top-color: #0891b2;
 }
 
 legend {
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e293b;
 }
 
 /* Floating icon for the home button */
 .iconbutton{
-    width:40px;
-    height:40px;
+    width:42px;
+    height:42px;
     border-radius: 100%;
-    background-color: rgb(225, 235, 235);
+    background-color: #f1f5f9;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     bottom:40px;
-    left:0;
-    }
+    left:20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
 
 .iconbutton img {
-    width:30px
+    width:24px
 }
     
 footer {
-    background-color:rgb(240, 234, 245);
+    background-color:#f1f5f9;
     margin-top: 20px;
 }
